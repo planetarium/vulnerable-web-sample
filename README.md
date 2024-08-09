@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Voucher Sample Web
 
-## Getting Started
+> **Warning**: This project intentionally contains security vulnerabilities. Do not use this code as a reference for secure coding practices.
 
-First, run the development server:
+## Overview
+
+"Voucher Sample Web" is a web application that demonstrates a simple voucher management system. Users can obtain and use vouchers to convert their Gold into USD. The application supports user registration, login, voucher issuance by administrators, and currency conversion functionalities.
+
+## Features
+
+1. **User Registration**
+   - New users can create an account to access the application's features.
+
+2. **Login**
+   - Existing users can log in to manage their vouchers and account balance.
+
+3. **Voucher Issuance (Admin Only)**
+   - Administrators can issue vouchers to specific users.
+   - Each voucher contains a specified amount of Gold.
+
+4. **Voucher Usage**
+   - Users can redeem issued vouchers to receive Gold in their accounts.
+
+5. **Gold Withdrawal**
+   - Users can withdraw their Gold balance by converting it to USD.
+
+## Description
+
+- **Gold Acquisition**: Users can acquire Gold by redeeming vouchers. Each voucher contains a certain amount of Gold that the user can add to their account.
+- **Currency Conversion**: Users can convert their Gold balance into USD and withdraw it, effectively utilizing their voucher-based earnings.
+- **Voucher Issuance by Admins**: Administrators have the ability to issue vouchers to any user. These vouchers can specify the amount of Gold they contain, allowing administrators to control the distribution of virtual currency within the application.
+
+## Disclaimer
+
+This project contains deliberate security vulnerabilities and should not be used as a guide for secure application development. The vulnerabilities are present for educational purposes to illustrate potential weaknesses in web application security.
+
+---
+
+**Note**: The "Voucher Sample Web" application is intended for educational use only. Use at your own risk.
+
+## How to Run Locally
 
 ```bash
-npm run dev
-# or
+yarn
+prisma generate
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
